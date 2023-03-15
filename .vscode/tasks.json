@@ -12,6 +12,7 @@
                 "${fileDirname}\\punto2.c",
                 "${fileDirname}\\punto3.c",
                 "${fileDirname}\\punto4.c",
+                "${fileDirname}\\punto5.c",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
             ],
