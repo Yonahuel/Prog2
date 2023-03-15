@@ -1,6 +1,8 @@
 #include "TP0_Repaso.h"
+#include <string.h>
 
 int main(){
+    Vivienda departamentos;
     int edificio[CANT_PISOS][CANT_DEPARTAMENTOS] = {
         {3, 5, 2, 1, 0},
         {2, 4, 3, 0, 2},
@@ -17,6 +19,13 @@ int main(){
     printf("La cantidad de viviendas vacias es de: %d \n", cantidadDeViviendasVacias(edificio));
 
     printf("EL promedio de habitantes por vivienda es de %f \n", promedioHabitantesPorVivienda(edificio));
+
+    departamentos = viviendaConMasHabitantes(edificio);
+
+    printf("El departamento con mas habitantes es el %d - %c", departamentos.piso, departamentos.depto);
+    
+
+    
 
 
 
