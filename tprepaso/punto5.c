@@ -13,7 +13,7 @@ int pisoConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]){
             contador += edificio[i][j];   // va contando los habitantes de cada depto
         }
 
-        if (contador > maximo){        
+        if (contador > maximo){        // compara si la cantidad de habitantes del piso actual es mayor al maximo q guardo
             maximo = contador;
             pisoMasHabitantes = i+1;
         }
@@ -21,7 +21,7 @@ int pisoConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]){
     }
 
     return pisoMasHabitantes;
-    
-
 
 }
+
+
