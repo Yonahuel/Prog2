@@ -25,3 +25,53 @@ int pisoConMasHabitantes(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]){
 }
 
 
+int cantidadDeViviendasVacias(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]){
+    int contador, i, j;
+
+    contador = 0;
+
+    for (i = 0; i < CANT_PISOS; i++)
+    {
+        for (j = 0; j < CANT_DEPARTAMENTOS; j++)     // recorro el edificio
+        {
+            if (edificio[i][j] == 0){       
+                contador ++;                // cuento la cantidad de viviendas en 0
+            }
+        }
+        
+    }
+
+    return contador;
+    
+}
+
+
+float promedioHabitantesPorVivienda(int edificio[CANT_PISOS][CANT_DEPARTAMENTOS]){
+    int i, j;
+    float contador, promedio, cant_viviendas;
+
+    contador, promedio = 0;
+
+    cant_viviendas = (CANT_PISOS*CANT_DEPARTAMENTOS);
+
+
+    for (i = 0; i < CANT_PISOS; i++)
+    {
+        for (j = 0; j < CANT_DEPARTAMENTOS; j++)         // recorro el edificio
+        {
+            contador = contador + edificio[i][j];     //acumulo la cantidad de personas
+        }
+        
+    }
+
+    promedio = (contador/cant_viviendas);   // divido la cantidad de personas por la cantidad de viviendas
+
+
+    return promedio;
+    
+}
+
+
+
+
+

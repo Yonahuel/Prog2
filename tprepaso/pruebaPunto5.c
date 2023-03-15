@@ -12,7 +12,12 @@ int main(){
         {0, 0, 1, 1, 1}
     };
 
-    printf("El piso con mas habitantes es el %d", pisoConMasHabitantes(edificio));
+    printf("El piso con mas habitantes es el %d \n", pisoConMasHabitantes(edificio));
+
+    printf("La cantidad de viviendas vacias es de: %d \n", cantidadDeViviendasVacias(edificio));
+
+    printf("EL promedio de habitantes por vivienda es de %f \n", promedioHabitantesPorVivienda(edificio));
+
 
 
     return 0;
