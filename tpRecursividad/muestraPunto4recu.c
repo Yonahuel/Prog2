@@ -6,7 +6,7 @@ int main(){
     printf("Ingrese un numero: ");
     scanf("%d", &k);
 
-    resultado = fibonacci(k);
+    resultado = terminoSerieDeFibonacci(k);
 
     printf("El elemento de la posicion k de la secuencia de Fibonacci es %d", resultado);
 }

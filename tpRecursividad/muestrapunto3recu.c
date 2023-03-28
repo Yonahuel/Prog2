@@ -8,7 +8,7 @@ int main(){
     printf("Ingrese un numero n: \n");
     scanf("%d", &n);
 
-    resultado = producto(m,n);
+    resultado = productoRecursivo(m,n);
 
     printf("El producto de esos numeros es: %d", resultado);
     

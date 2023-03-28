@@ -8,7 +8,7 @@ int main(){
     printf("Ingrese un numero n: \n");
     scanf("%f", &n);
 
-    resultado = Cociente(m,n);
+    resultado = restoRecursivo(m,n);
 
     if (resultado != -1) {printf("El cociente de estos numeros es: %.4f", resultado);}
 
