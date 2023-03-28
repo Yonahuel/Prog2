@@ -1,11 +1,12 @@
 #include <stdbool.h>
 #include <string.h>
+#include "TP1_Recursividad.h"
 
-int fibonacci(int k){
+int terminoSerieDeFibonacci(int k){
   int resultado = 0;
     if (k <= 1){
         resultado = k;
-    } else resultado = fibonacci(k-1) + fibonacci(k-2);
+    } else resultado = terminoSerieDeFibonacci(k-1) + terminoSerieDeFibonacci(k-2);
 
 
     return resultado;

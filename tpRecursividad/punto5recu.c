@@ -1,8 +1,9 @@
 #include <stdbool.h>
 #include <string.h>
 #include <stdio.h>
+#include "TP1_Recursividad.h"
 
-float Cociente(float m, float n){
+float restoRecursivo(float m, float n){
 
     float resultado = 0;
 
@@ -11,7 +12,7 @@ float Cociente(float m, float n){
         resultado = -1;
     } else if (m<n){        // cuando m sea menor que n va a terminar de restar y llamarse a si misma
         resultado = 0; 
-    } else resultado = 1 + Cociente(m-n, n);  // si m es mayor, hace la recursividad restando n a m
+    } else resultado = 1 + restoRecursivo(m-n, n);  // si m es mayor, hace la recursividad restando n a m
     
 
     return resultado;
